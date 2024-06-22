@@ -67,14 +67,16 @@ body {
 
 /* Footer */
 footer {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 0.8em;
   text-align: center;
   padding: 5px 0;
-  background: #000000;
-  color: #ffffff;
-  opacity: 0.4;
+  background: rgba(0, 0, 0, 0.3); /* Usar rgba para la opacidad del fondo */
   position: fixed;
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
+}
+
+.footertex {
+  color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 0.8em;
 }
