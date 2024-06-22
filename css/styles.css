@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 100vh;
   background-color: #1c1c1c;
   background-size: cover;
   background-position: center;
@@ -31,11 +31,11 @@ body {
 .container {
   margin: 10px;
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(41, 41, 41, 0.7);
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-  max-width: 430px;
+  max-width: 100%;
   width: 100%;
   color: #ffffff;
 }
@@ -78,51 +78,84 @@ body {
 }
 
 .paola-alejandro {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
 .texto1 {
-  margin-top: 50px;
+  margin-top: 25px;
   font-family: "Century Gothic";
   color: #fff;
   font-size: 100%;
   line-height: 1.65;
 }
 
+/*inicio del contador*/
+.countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  margin-top: 0px;
+  width: 100%;
+  font-family: "Century Gothic";
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.countdown-item {
+  margin: 0 10px;
+}
+
+.countdown-item span {
+  font-size: 30px;
+}
+
+/* fin del contador*/
+
+/*inicio de seccion ubicacion*/
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .container-ubicaciones {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 30px;
 }
 
-.parroquia-item,
-.recepcion-item {
+.ubicacion-item {
+  flex: 1 1 calc(50% - 20px);
   text-align: center;
+  margin: 10px;
 }
 
-.parroquia-text {
-  font-family: "cherolinaregular";
-  font-size: 3.2em;
-  color: #fff;
-}
-
-.recepcion-text {
+.ubicacion-text {
   font-family: "cherolinaregular";
   font-size: 3.2em;
   color: #fff;
 }
 
 .marcador-de-posicion {
-  max-width: 25%;
+  max-width: 50px;
   height: auto;
   margin: 10px 0;
+  animation: pulsate 2.2s infinite;
 }
 
-.parroquia-marcador-texto,
-.recepcion-marcador-texto {
+.ubicacion-marcador-texto {
   font-family: "Century Gothic";
   color: #fff;
   font-size: 1em;
@@ -130,25 +163,16 @@ body {
 }
 
 /* Footer */
-footer {
-  text-align: center;
-  padding: 5px 0;
-  background: rgba(0, 0, 0, 0.3); /* Usar rgba para la opacidad del fondo */
-  position: fixed;
-  width: 100%;
-  bottom: 0px;
-}
-
-.footertex {
-  color: #ffffff;
+.footer-text {
+  margin-top: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
   font-size: 0.8em;
 }
 
 /* Ajustes responsivos */
 @media (max-width: 600px) {
-  .parroquia-text,
-  .recepcion-text {
+  .ubicacion-text {
     font-size: 3.5em;
   }
 
@@ -160,8 +184,13 @@ footer {
     padding: 20px;
   }
 
-  .parroquia-marcador-texto,
-  .recepcion-marcador-texto {
+  .ubicacion-marcador-texto {
     font-size: 0.8em;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
   }
 }
