@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Century Gothic";
-  src: url("/fonts/CenturyGothic.ttf");
+  src: url("/css/CenturyGothic.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "cherolinaregular";
-  src: url("/fonts/Cherolina.ttf") format("woff");
+  src: url("/css/Cherolina.ttf") format("woff");
   font-weight: normal;
   font-style: normal;
 }
