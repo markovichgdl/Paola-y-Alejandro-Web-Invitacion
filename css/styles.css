@@ -91,16 +91,18 @@ body {
   font-size: 100%;
   line-height: 1.65;
 }
+
+.emoji {
+  filter: grayscale(100%) brightness(80%);
+}
 .date-container {
+  font-size: 1.6em;
+  font-family: "Century Gothic";
   padding: 45px;
   text-align: center;
-}
-
-#current-date {
-  font-family: "Century Gothic";
-  font-size: 1.4em;
   color: #ffffff;
 }
+
 /*inicio del contador*/
 .countdown {
   display: flex;
@@ -119,7 +121,7 @@ body {
 }
 
 .countdown-item span {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 /* fin del contador*/
