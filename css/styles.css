@@ -92,13 +92,13 @@ body {
   line-height: 1.65;
 }
 .date-container {
-  padding: 20px;
+  padding: 45px;
   text-align: center;
 }
 
 #current-date {
   font-family: "Century Gothic";
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: #ffffff;
 }
 /*inicio del contador*/
