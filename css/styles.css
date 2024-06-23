@@ -91,7 +91,16 @@ body {
   font-size: 100%;
   line-height: 1.65;
 }
+.date-container {
+  padding: 20px;
+  text-align: center;
+}
 
+#current-date {
+  font-family: "Century Gothic";
+  font-size: 1.3em;
+  color: #ffffff;
+}
 /*inicio del contador*/
 .countdown {
   display: flex;
@@ -173,7 +182,7 @@ body {
 /* Ajustes responsivos */
 @media (max-width: 600px) {
   .ubicacion-text {
-    font-size: 3.5em;
+    font-size: 3.8em;
   }
 
   .texto1 {
@@ -185,7 +194,7 @@ body {
   }
 
   .ubicacion-marcador-texto {
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
 }
 
